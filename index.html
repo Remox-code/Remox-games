@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+            <ul class="nav-links">
+                <li><a href="pages/rock paper/index.html">Rock Paper Scissors </a></li>
+                <li><a href="pages/challenge/index.html">Random Challenge</a></li>
+                <li><a href="pages/Tas/index.html">Dice Rolling</a></li>
+            </ul>
+
+<h1 id="title">Number Guess Game</h1>
+
+<div id="game">
+
+    <h2>Choose difficulty:</h2>
+    <select id="difficulty">
+        <option value="50">Easy (1–50)</option>
+        <option value="100">Medium (1–100)</option>
+        <option value="500">Hard (1–500)</option>
+    </select>
+
+    <br><br>
+    <button id="startGame" class="button">Start Game</button>
+<button id="stopGame" class="button">Stop Game</button>
+
+    <h2>Guess a number:</h2>
+    <input type="number" id="userGuess" placeholder="Enter your guess..." disabled>
+    <button id="guessBtn" class="button" disabled>Guess</button>
+
+    <h2 id="message">Game is not started yet...</h2>
+
+    <h3>History:</h3>
+    <ol id="historyList"></ol>
+
+    <div id="stats">
+        <p>Guess Count: <span class="guess-Times">0</span></p>
+        <p>Win Count: <span class="win-Times">0</span></p>
+        <p>Total Guesses: <span class="all-guess-Times">0</span></p>
+    </div>
+
+    <h2>Timer: <span id="timer">30</span> sec</h2>
+
+    <button id="again" class="button">Again</button>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

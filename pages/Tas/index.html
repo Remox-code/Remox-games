@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <ul>
+    <li><a href="../../index.html">Guess NUmber</a></li>
+        <li><a href="../rock paper/index.html"> Rock Paper</a></li>
+                <li><a href="../challenge/index.html">Random challeng</a></li>
+</ul>
+              <div class="game-container">
+
+    <button id="startBtn" class="btn start">Start Game</button>
+
+    <div class="players">
+        <div id="p1" class="player active">
+            <h2>Player One</h2>
+            <div class="score-box">
+                <p>Total Score</p>
+                <h1 id="p1Total">0</h1>
+            </div>
+            <div class="score-box">
+                <p>Current Score</p>
+                <h1 id="p1Current">0</h1>
+            </div>
+        </div>
+
+        <div id="p2" class="player">
+            <h2>Player Two</h2>
+            <div class="score-box">
+                <p>Total Score</p>
+                <h1 id="p2Total">0</h1>
+            </div>
+            <div class="score-box">
+                <p>Current Score</p>
+                <h1 id="p2Current">0</h1>
+            </div>
+        </div>
+    </div>
+
+    <img id="dice" class="dice" src="" style=" border-radius: 999px;">
+
+    <div class="controls">
+        <button id="rollBtn" class="btn" disabled>Roll Dice</button>
+        <button id="holdBtn" class="btn" disabled>Hold Score</button>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

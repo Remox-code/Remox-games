@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Challenge Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<ul>
+<li><a href="../../index.html">Guess Number</a></li>
+<li><a href="../rock paper/index.html">Rock Paper</a></li>
+<li><a href="../Tas/index.html">Dice Rolling</a></li>
+</ul>
+
+<h2 style="text-align: center; font-size: 20px;">There are 6 categories in this game
+    Each one has 100 items, choose your category ,
+    and add players (Enter) . then  press spin (Space).
+</h2>
+<h1>TRUTH OR DARE – NEON EDITION</h1>
+
+<select id="categorySelect">
+    <option value="Truth">Truth</option>
+    <option value="Physical">Physical</option>
+    <option value="Food">Food</option>
+    <option value="Random">Random</option>
+    <option value="Adult">Adult (+18)</option>
+    <option value="Social">Social</option>
+</select>
+
+<div id="playerSetup">
+    <input id="playerInput" type="text" placeholder="Enter player name">
+    <button id="addPlayerBtn">Add Player</button>
+    <div id="playerList"></div>
+</div>
+
+<div id="wheel"></div>
+
+<button id="spinBtn">SPIN</button>
+
+<div id="challengeBox"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

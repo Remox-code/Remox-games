@@ -1,0 +1,203 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+background:#111;
+color:white;
+}
+
+.layout{
+display:flex;
+min-height:100vh;
+}
+
+/* ======== SIDEBAR ======== */
+
+.menu{
+width:230px;
+background:#1b1b1b;
+padding:20px;
+display:flex;
+flex-direction:column;
+gap:18px;
+border-right:2px solid #333;
+}
+
+.menu h1{
+font-size:20px;
+margin-bottom:5px;
+}
+
+.menu h2{
+font-size:16px;
+font-weight:normal;
+}
+
+.points,
+.result-container{
+display:flex;
+flex-direction:column;
+gap:6px;
+}
+
+#user-point,
+#cpu-point,
+#user-point-total,
+#cpu-point-total{
+background:#222;
+padding:6px 0;
+border-radius:5px;
+text-align:center;
+font-size:18px;
+border:1px solid #333;
+}
+
+.btn-container{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:10px;
+}
+
+button{
+padding:10px;
+font-size:15px;
+border:none;
+background:#333;
+color:white;
+cursor:pointer;
+border-radius:6px;
+transition:0.3s;
+border:1px solid #444;
+}
+
+button:hover{
+background:#555;
+}
+
+/* ======== MAIN PAGE ======== */
+
+.page{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:20px;
+}
+
+/* Navigation Links */
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+margin-bottom:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#ccc;
+font-size:18px;
+padding:8px 16px;
+border-radius:8px;
+border:1px solid #444;
+transition:0.3s;
+background:#1c1c1c;
+}
+
+.nav-links a:hover{
+background:#333;
+color:white;
+transform:translateY(-2px);
+box-shadow:0 0 10px rgba(255,255,255,0.2);
+}
+
+/* Game section */
+.container{
+text-align:center;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.user-choose img,
+.cpu-choose img{
+width:120px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.user-choose{
+display:flex;
+gap:25px;
+justify-content:center;
+}
+
+.cpu-choose{
+display:flex;
+gap:25px;
+justify-content:center;
+}
+
+.user-choose img:hover{
+transform:scale(1.2);
+}
+
+.hidden{
+display:none;
+}
+
+#result{
+font-size:28px;
+min-height:40px;
+padding-top: 30px;
+}
+
+.shake{
+animation:shake 0.4s;
+}
+
+@keyframes shake{
+0%{transform:translateX(0)}
+25%{transform:translateX(-5px)}
+50%{transform:translateX(5px)}
+75%{transform:translateX(-5px)}
+100%{transform:translateX(0)}
+}
+
+/* Responsive */
+@media (max-width:760px){
+
+.layout{
+flex-direction:column;
+}
+.a{
+    display: none;
+}
+.menu{
+width:100%;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+.nav-links{
+justify-content:center;
+gap: 0.5;
+}
+.nav-links a{
+    font-size: 8px;
+}
+.user-choose img,
+.cpu-choose img{
+width:90px;
+}
+#h1 , h1 , #result{
+    text-align: center;
+    font-size: 20px;
+}
+}
